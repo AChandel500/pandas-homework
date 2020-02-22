@@ -50,8 +50,6 @@ def check_corr(dframe):
 
 
 
-
-
 # Question 2a - load file and clean data
 
 path = '/home/user/PycharmProjects/Homework 5/02_18.csv'
