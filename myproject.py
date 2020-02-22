@@ -14,13 +14,13 @@ def clean_data(dframe, in_place):
     deletion of null rows/columns is not selected"""
 
     if in_place==True:
-        flight_data.dropna(axis=1, how='all', inplace=in_place)
-        flight_data.dropna(how='any', inplace=in_place)
+        dframe.dropna(axis=1, how='all', inplace=in_place)
+        dframe.dropna(how='any', inplace=in_place)
         dframe.info()
         return
     else:
-        flight_data.dropna(axis=1, how='all', inplace=in_place)
-        flight_data.dropna(how='any', inplace=in_place)
+        dframe.dropna(axis=1, how='all', inplace=in_place)
+        dframe.dropna(how='any', inplace=in_place)
         dframe.info()
         return dframe
 
@@ -46,7 +46,7 @@ def print_data_info(dframe):
 
 def check_corr(dframe):
     """Accepts a dataframe, prints correlation table"""
-    print(flight_data.corr().to_string())
+    print(dframe.corr().to_string())
 
 
 
